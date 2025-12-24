@@ -1,0 +1,21 @@
+@startuml
+
+usecase Add
+usecase Edit
+usecase Delete
+usecase Sort
+
+User->Add
+User->Edit
+User->Delete
+User->Sort
+
+usecase "Ban user"
+usecase "Modify course access"
+usecase "Remove course"
+
+Admin->"Ban user"
+Admin->"Modify course access"
+Admin->"Remove course"
+
+@enduml
